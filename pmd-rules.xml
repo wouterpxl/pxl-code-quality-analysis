@@ -11,17 +11,16 @@
     <rule ref="category/java/design.xml/CyclomaticComplexity" />
     <rule ref="category/java/design.xml/NPathComplexity" />
     <rule ref="category/java/codestyle.xml/PrematureDeclaration" />
-    <rule ref="category/java/errorprone.xml/EmptyControlStatement" />
+    <rule ref="category/java/errorprone.xml/EmptyIfStmt" />
     <rule ref="category/java/errorprone.xml/EmptyCatchBlock" />
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
 
     <rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
-    <rule ref="category/java/errorprone.xml/SwitchDefault" />
+    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault" />
     <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
     <rule ref="category/java/codestyle.xml/UselessParentheses" />
     <rule ref="category/java/errorprone.xml/CloseResource" />
     <rule ref="category/java/codestyle.xml/ControlStatementBraces" />
-    <rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn" />
     <rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
 
     <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
