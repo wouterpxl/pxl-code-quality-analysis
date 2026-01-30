@@ -1,24 +1,22 @@
 <?xml version="1.0"?>
-
 <ruleset name="PmdRules"
     xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    
     <description>
-        Custom rule set for code quality/creativity check using PMD
+        PXL Research Project: custom PMD rule set for code quality
     </description>
 
-    <!-- Flow/6 -->
     <rule ref="category/java/design.xml/CyclomaticComplexity" />
     <rule ref="category/java/design.xml/NPathComplexity" />
     <rule ref="category/java/codestyle.xml/PrematureDeclaration" />
-    <rule ref="category/java/errorprone.xml/EmptyIfStmt" />
+    <rule ref="category/java/errorprone.xml/EmptyControlStatement" />
     <rule ref="category/java/errorprone.xml/EmptyCatchBlock" />
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
 
-    <!-- Idiom/8 -->
     <rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
-    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault" />
+    <rule ref="category/java/errorprone.xml/SwitchDefault" />
     <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
     <rule ref="category/java/codestyle.xml/UselessParentheses" />
     <rule ref="category/java/errorprone.xml/CloseResource" />
@@ -26,18 +24,15 @@
     <rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn" />
     <rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
 
-    <!-- Expressions/5 -->
     <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
     <rule ref="category/java/design.xml/CollapsibleIfStatements" />
     <rule ref="category/java/design.xml/SimplifyBooleanReturns" />
     <rule ref="category/java/codestyle.xml/ConfusingTernary" />
     <rule ref="category/java/bestpractices.xml/AvoidReassigningParameters" />
 
-    <!-- Decomposition/2 -->
     <rule ref="category/java/design.xml/SingularField" />
     <rule ref="category/java/design.xml/NcssCount" />
 
-    <!-- Modularization/5 -->
     <rule ref="category/java/design.xml/LawOfDemeter" />
     <rule ref="category/java/bestpractices.xml/LooseCoupling" />
     <rule ref="category/java/design.xml/TooManyFields" />
